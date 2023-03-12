@@ -1,0 +1,68 @@
+@import '/node_modules/normalize.css/normalize';
+
+.test{
+  font-size: 5rem;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+
+body{
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+  border-radius: 1em;
+  border: 2px solid #f8fe85;
+  padding: 2.5rem;
+  text-align: center;
+  width: 500px;
+  background-color: rgba($color: #000, $alpha: .5);
+}
+
+h1{
+  font-size: 4rem;
+  margin: 0rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: #ffbd67;
+}
+
+.span{
+  font-size: 5rem;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.btn-wrapper{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.btn{
+  background-color: transparent;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #f8fe85;
+  color: #ffbd67;
+  cursor: pointer;
+  &:hover{
+    background-color: #f8fe85;
+    color: #555;
+  }
+}
