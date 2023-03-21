@@ -1,0 +1,45 @@
+button{
+background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.header__btn{
+    margin-bottom: -2.5rem;
+}
+
+.search-button-wrapper{
+  position: relative;
+  width: 40px;
+  &.active .header__btn-active{
+    display: block;
+  }
+  &.active .header__btn{
+    display: none;
+  }
+}
+
+
+.search-img{
+  fill: var(--color-white);
+  width: 40px;
+  height: 40px;
+  &:hover{
+    fill: var(--color-primary);
+  }
+}
+
+.close-button{
+  transition:  transform .2s ease-in-out;
+  &:hover{
+    transform: rotate(90deg);
+  }
+}
+
+.close-img{
+  width: 32px;
+  height: 32px;
+  margin-bottom: -.8rem;
+}

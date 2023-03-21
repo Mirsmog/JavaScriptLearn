@@ -1,13 +1,30 @@
 @import '/node_modules/normalize.css/normalize';
 
-.test{
-  font-size: 5rem;
-  font-weight: 500;
-  text-align: center;
-  color: black;
-  text-transform: uppercase;
+//GROBAL
+:root{
+	--color-primary:   #a2c11c;
+	--color-secondary: #2c5d63;
+	--color-grey:      #283739;
+	--color-dark:      #111515;
+	--color-white:     #e0e0e0;
+}
+
+html{
+	font-size: 62.5%;
 }
 
 body{
-  background-color: grey;
+	background-color: var(--color-grey);
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: var(--color-white);
+	font-size: 1.6rem;
 }
+
+// BLOCKS
+@import './blocks/container';
+@import './blocks/button';
+@import './blocks/header';
+@import './blocks/hero';
+@import './blocks/main';
+@import './blocks/footer';
