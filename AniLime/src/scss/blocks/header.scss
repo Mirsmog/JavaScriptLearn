@@ -8,41 +8,62 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__inner-right{
+    display: flex;
+  }
 
-.header__btn-active{
+  .logo {
+    width: 166px;
+  }
+
+  .header__btn-search {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0rem 1.6rem;
-    width: 26rem;
-    height: 6rem;
-    background-color: rgba($color: #111515, $alpha: .2);
-    border-radius: 0.8rem;
-    text-align: center;
-    margin-bottom: -1rem;
+    width: 22rem;
+    height: 5rem;
+    background-color: rgba($color: #111515, $alpha: 0.2);
     position: absolute;
-    top: -2rem;
     right: 0;
-  display: none;
+    display: none;
   }
 
-  &__search-input{
-    font-size: 2.4rem;
+  .header__btn-register {
+    background-color: var(--color-secondary);
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    color: var(--color-white);
+    transition: .2s background-color ease-in-out;
+    &:hover{
+    background-color: var(--color-primary);
+    }
+  }
+
+  .header__btn {
+    border-radius: 0.8rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  &__search-input {
+    font-size: 1.8rem;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     width: 80%;
     height: 100%;
     color: var(--color-white);
     background-color: transparent;
+    margin-right: 1rem;
     border: none;
-    &:focus{
+    &:focus {
       outline: none;
       border: none;
     }
-    &::placeholder{
-      font-family: "Roboto", sans-serif;    
+    &::placeholder {
+      font-family: "Roboto", sans-serif;
       font-weight: 300;
-      font-size: 2.4rem;
+      font-size: 1.8rem;
     }
   }
 }
@@ -51,19 +72,19 @@
   display: flex;
   list-style: none;
   align-items: flex-end;
-  font-size: 3.2rem;
+  font-size: 2rem;
   padding: 0;
   margin: 0;
-  margin-bottom: -3rem;
+  margin-bottom: -2rem;
   margin-left: -10rem;
-  li:not(:last-child){
-    margin-right: 5.6rem;  
+  li:not(:last-child) {
+    margin-right: 5.6rem;
   }
   a {
     color: var(--color-white);
     text-decoration: none;
     &:hover,
-    &:focus{
+    &:focus {
       color: var(--color-primary);
     }
   }
