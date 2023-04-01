@@ -1,81 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Roboto:wght@300;400;700&family=Tajawal&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="./src/img/chibi-cross-girl.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AniLime</title>
-  </head>
-  <body id="app">
-    <header class="header">
-      <div class="container">
-        <img class="logo" src="src/img/Logo.svg" alt="logo"/>
-        <div class="header__inner">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Anime</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            </ul>
-          </nav>
-          <div class="header__inner-right">
-            <div class="search-button-wrapper ">
-              <button class="search-btn" id="test">
-                <svg
-                  class="search-btn"
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 50 50"
-                >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Roboto:wght@300;400;700&family=Tajawal&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./src/img/chibi-cross-girl.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AniLime</title>
+</head>
+
+<body id="app">
+  <!--HEADER-->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" id="logo">
+          <img class="logo" src="src/img/Logo.svg" alt="logo">
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Anime</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          </ul>
+        </nav>
+        <div class="header__inner-right">
+          <div class="search-button-wrapper ">
+            <button class="search-btn" id="test">
+              <svg class="search-btn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                viewBox="0 0 50 50">
+                <path
+                  d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                </path>
+              </svg>
+            </button>
+            <div class="header__btn header__btn-search">
+              <input id="header__input" class="header__search-input" type="text" name="search" placeholder="Search" />
+              <button class="close-button" id="test2">
+                <svg class="close-img" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
                   <path
-                    d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
-                  ></path>
+                    d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 37.690466 12.309534 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 13.390466 46 4 36.609534 4 25 C 4 13.390466 13.390466 4 25 4 z M 32.990234 15.986328 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.990234 15.986328 z">
+                  </path>
                 </svg>
               </button>
-              <div class="header__btn header__btn-search">
-                <input
-                  id="header__input"
-                  class="header__search-input"
-                  type="text"
-                  name="search"
-                  placeholder="Search"
-                />
-                <button class="close-button" id="test2">
-                  <svg
-                    class="close-img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 50 50"
-                  >
-                    <path
-                      d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 37.690466 12.309534 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 13.390466 46 4 36.609534 4 25 C 4 13.390466 13.390466 4 25 4 z M 32.990234 15.986328 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.990234 15.986328 z"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-              <!--.header__btn-active-->
             </div>
-            <!--.search-button-wrapper-->
-            <button class="header__btn header__btn-register">
-              Login / Register
-            </button>
+            <!--.header__btn-active-->
+          </div>
+          <!--.search-button-wrapper-->
+          <button class="header__btn header__btn-register">
+            Login / Register
+          </button>
+        </div><!--.header__inner-right-->
+      </div>
+      <!--.header__inner-->
+    </div>
+    <!--.container-->
+  </header>
+  <!--.MAIN-->
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__left">
+            <h1 class="hero__title">
+              The Best Anime Streaming Service
+              in the World
+            </h1>
+            <h3 class="hero__subtitle">
+              Stream on desktop, mobile, gaming consoles, and other streaming devices that include iOS, Android, Apple
+              TV, Xbox, Roku, and PS4.
+            </h3>
+          </div>
+          <div class="hero__right">
+            <img src="./src/img/anime-hero-cards.png" alt="image-anime-card">
           </div>
         </div>
-        <!--.header__inner-->
       </div>
-      <!--.container-->
-    </header>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    </section>
+    <!--.ANIME-->
+    <section class="anime">
+      <div class="container">
+        <ul class="anime__wrapper-card" id="anime__wrapper">
+
+        </ul>
+      </div>
+    </section>
+    <nav class="pagination-nav">
+      <div class="container">
+        <div class="pagination__wrapper">
+          <a class="pag-link" href="#">
+            <span class="row row-left"><img src="./src/img/Arrow 1.svg" alt="img-arrow-prev"></span>
+          </a>
+          <a class="pag-link" href="#"><span class="pag_num">1</span></a>
+          <a class="pag-link" href="#"><span class="pag_num">2</span></a>
+          <a class="pag-link" href="#"><span class="pag_num">3</span></a>
+          <a class="pag-link" href="#"><span class="pag_num">4</span></a>
+          <a class="pag-link" href="#"><span class="pag_num">5</span></a>
+          <a class="pag-link" href="#"><span class="pag_num">6</span></a>
+          <a class="pag-link" href="#"><span class="pag_num">7</span></a>
+          <a class="pag-link" href="#"><span class="pag_num">8</span></a>
+          <a class="pag-link" href="#"><span class="pag_num">9</span></a>
+          <a class="pag-link" href="#"><span class="pag_num">10</span></a>
+          <a class="pag-link" href="#"><span class="pag_num">999</span></a>
+          <a class="pag-link" href="#">
+            <span class="row"><img src="./src/img/Arrow 1.svg" alt="img-arrow-next"></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__left">
+            <div class="copyright">Copyright © 2023.</div>
+            <div class="author">Created by PhantomCrunhTz</div>
+          </div>
+          <div class="footer_right">
+            <a href="#logo">
+              <img src="./src/img/Logo.svg" alt="logo" class="footer__logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

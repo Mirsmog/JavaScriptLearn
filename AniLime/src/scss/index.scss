@@ -7,12 +7,18 @@
 	--color-white:     #e0e0e0;
 }
 
+h1,h2,h3,h4{padding: 0; margin: 0;}
+ul{padding: 0; margin: 0;}
+li{list-style: none;}
+
 html{
 	font-size: 62.5%;
 	box-sizing: border-box;
 }
 
 body{
+	padding: 0;
+	margin: 0;
 	background-color: var(--color-grey);
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
@@ -27,3 +33,5 @@ body{
 @import './blocks/hero';
 @import './blocks/main';
 @import './blocks/footer';
+@import './blocks/anime';
+@import './blocks/pagination';

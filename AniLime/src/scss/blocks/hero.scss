@@ -1,0 +1,32 @@
+.hero {
+  background: url(/src/img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 5rem;
+}
+.hero__inner {
+  padding-top: 28rem;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__left {
+  width: 100%;
+  max-width: 61rem;
+  font-family: "Cabin", sans-serif;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.6rem;
+  max-width: 50rem;
+  margin-bottom: 3rem;
+}
+.hero__subtitle {
+  font-weight: 400;
+  font-size: 2.4rem;
+  opacity: .6;
+}
+.hero__right {
+}
