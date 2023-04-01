@@ -1,9 +1,13 @@
 .pagination-nav {
   margin-bottom: 9rem;
 }
-.container {
-}
-.pagination__wrapper {
+
+.pagination-num__wrapper{
+  display: flex;
+  gap: 1.4rem;
+};
+
+.pagination__wrapper{
   width: 100%;
   max-width: 70rem;
   margin: 0 auto;

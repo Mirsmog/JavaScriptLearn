@@ -12,6 +12,9 @@
   width: 100%;
   max-width: 25.1rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .anime__name {
@@ -19,11 +22,17 @@
   text-decoration: none;
   font-size: 2rem;
   margin-bottom: 0.6rem;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 5.5rem;
+
 }
 .anime__series {
   font-size: 1.8rem;
   color: var(--color-primary);
   text-decoration: none;
+
 }
 .anime-stars {
   position: absolute;
@@ -59,6 +68,10 @@
 	  border-right: 8px solid transparent;
   	border-top: 13px solid var(--color-primary);
   }
+}
+.anime-img{
+  max-width: 25rem;
+  height: 35rem;
 }
 .img-star {
   margin-right: 1rem;
