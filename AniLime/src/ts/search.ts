@@ -2,7 +2,7 @@ export function searchToggle(){
   const wrapper = document.querySelector('#inputWrapper')
   const input = <HTMLInputElement> document.querySelector('#header__input')
   wrapper?.addEventListener('click', (e) => {
-    const target = e.target
+    const target = e.target as Element
     if(target?.classList.contains('search-btn')){
       wrapper?.classList.add('active')
       input.focus()
