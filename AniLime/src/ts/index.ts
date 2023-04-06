@@ -4,7 +4,7 @@ import { searchToggle } from "./search";
 import { addPaginationBtn } from "./addPaginationBtn";
 
 
-addAnimeToHtml(anime);
+addAnimeToHtml(anime)
 
 searchToggle()
 

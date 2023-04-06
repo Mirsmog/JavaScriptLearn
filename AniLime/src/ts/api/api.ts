@@ -6,4 +6,4 @@ async function getUsers(api) {
   }
 }
 
-export const anime = await getUsers(`https://kitsu.io/api/edge/anime?filter[seasonYear]=2020&page[limit]=12&page[offset]=${700}`)
+export const anime = await getUsers(`https://kitsu.io/api/edge/anime?filter[seasonYear]=2020&page[limit]=12&page[offset]=${690}`)
