@@ -3,7 +3,7 @@ import { addAnimeToHtml } from "./addCards";
 import { searchToggle } from "./search";
 import { addPaginationBtn } from "./addPaginationBtn";
 
-addAnimeToHtml(getAnimeList(`https://kitsu.io/api/edge/anime?filter[seasonYear]=2020&page[limit]=12&page[offset]=${690}`),12)
+addAnimeToHtml(getAnimeList(`https://kitsu.io/api/edge/anime?filter[seasonYear]=2020&page[limit]=12&page[offset]=${720}`))
 
 searchToggle()
 
