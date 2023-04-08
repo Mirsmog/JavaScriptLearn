@@ -1,4 +1,4 @@
-async function getUsers(api) {
+export async function getAnimeList(api) {
   const response = await fetch(api);
   if (response.ok) {
     const data = await response.json();
@@ -6,4 +6,4 @@ async function getUsers(api) {
   }
 }
 
-export const anime = await getUsers(`https://kitsu.io/api/edge/anime?filter[seasonYear]=2020&page[limit]=12&page[offset]=${690}`)
+// export const anime = await getAnimeList()

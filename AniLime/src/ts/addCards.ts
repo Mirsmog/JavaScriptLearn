@@ -1,26 +1,27 @@
-export function addAnimeToHtml(arr) {
+export async function addAnimeToHtml(arr, animeLength) {
+  const anime = await arr
   const wrapper = document.querySelector("#anime__wrapper");
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < animeLength; i++) {
     const list = document.createElement("li");
     list.classList.add("anime-card");
     const image =
-      arr[i].attributes.posterImage.small !== undefined
-        ? arr[i].attributes.posterImage.small
+      anime[i].attributes.posterImage.small !== undefined
+        ? anime[i].attributes.posterImage.small
         : "./src/img/404.jpg";
     list.innerHTML = `
             <a href="#" >
               <img class="anime-img" src="${image}" alt="${
-      arr[i].attributes.canonicalTitle
+      anime[i].attributes.canonicalTitle
     }">
             </a>
             <a href="#" class="anime__name">
-              <h3>${arr[i].attributes.canonicalTitle}</h3>
+              <h3>${anime[i].attributes.canonicalTitle}</h3>
             </a>
             <a href="#" class="anime__series">Series</a>
             <div class="anime-stars">
               <img src="./src/img/star.svg" alt="img-start" class="img-star">
               <div class="anime-star__number">
-                ${(arr[i].attributes.averageRating / 10).toFixed(1)}
+                ${(anime[i].attributes.averageRating / 10).toFixed(1)}
               </div>
             </div>
 `;
