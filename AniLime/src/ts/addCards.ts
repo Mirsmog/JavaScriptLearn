@@ -1,7 +1,6 @@
 export async function addAnimeToHtml(arr) {
   const anime = await arr
   const validAnime = anime.filter((item) => item.attributes.averageRating !== null).sort((a,b) => a.attributes.popularityRank > b.attributes.popularityRank ? 1 : -1)
-  console.log(validAnime)
   if (await anime.length > 0) {
   const wrapper = document.querySelector("#anime__wrapper");
   for (let i = 0; i < validAnime.length; i++) {

@@ -5,11 +5,18 @@
   background-size: cover;
   height: 100vh;
   margin-bottom: 5rem;
+
+  @include breakpoint($xs){
+    background: none;
+  }
 }
 .hero__inner {
   padding-top: 28rem;
   display: flex;
   justify-content: space-between;
+  @include breakpoint($xs){
+    background-color: red;
+  }
 }
 .hero__left {
   width: 100%;

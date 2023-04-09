@@ -28,6 +28,8 @@ body{
 
 // BLOCKS
 @import './blocks/error';
+@import './blocks/breakpoints';
+@import './mixins/mixins';
 @import './blocks/container';
 @import './blocks/button';
 @import './blocks/header';
