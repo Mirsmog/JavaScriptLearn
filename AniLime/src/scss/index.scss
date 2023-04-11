@@ -1,4 +1,4 @@
-//GROBAL
+//GLOBAL
 :root{
 	--color-primary:   #a2c11c;
 	--color-secondary: #2c5d63;
@@ -28,6 +28,7 @@ body{
 
 // BLOCKS
 @import './blocks/error';
+@import './blocks/burger';
 @import './blocks/breakpoints';
 @import './mixins/mixins';
 @import './blocks/container';

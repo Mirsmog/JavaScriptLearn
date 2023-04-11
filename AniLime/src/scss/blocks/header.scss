@@ -38,8 +38,14 @@
     margin-top: -2.5rem;
   }
 
-  &.active .search-button-wrapper::after{
-    display: none;
+  &.active .search-button-wrapper{
+    left: 0;
+
+
+
+    &::after{
+      display: none;
+    }
   }
 
   &.active .logo{
@@ -56,6 +62,8 @@
 
   &__inner-right{
     display: flex;
+    // align-items: center;
+    position: relative;
   }
 
   .logo {
@@ -84,8 +92,20 @@
     font-size: 2rem;
     color: var(--color-white);
     transition: .2s background-color ease-in-out;
+
+    @include breakpoint($xl){
+      display: none;
+    }
+
     &:hover{
     background-color: var(--color-primary);
+    }
+
+  }
+
+  .search-button-wrapper{
+    @include breakpoint($xl){
+      display: none;
     }
   }
 
