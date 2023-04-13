@@ -1,3 +1,6 @@
+@import './reset';
+
+
 //GLOBAL
 :root{
 	--color-primary:   #a2c11c;
@@ -7,9 +10,9 @@
 	--color-white:     #e0e0e0;
 }
 
-h1,h2,h3,h4{padding: 0; margin: 0;}
-ul{padding: 0; margin: 0;}
-li{list-style: none;}
+.no-scroll{
+	overflow: hidden;
+}
 
 html{
 	font-size: 62.5%;
@@ -24,13 +27,32 @@ body{
 	font-weight: 400;
 	color: var(--color-white);
 	font-size: 1.6rem;
+
+	&.no-scroll .wrapper::after{
+		display: block;
+	}
+}
+
+.wrapper{
+	position: relative;
+&::after{
+		position: absolute;
+		content: '';
+		background-color: rgba($color: #000000, $alpha: 0.3);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 999;
+		display: none;
+	}
 }
 
 // BLOCKS
 @import './blocks/error';
-@import './blocks/burger';
 @import './blocks/breakpoints';
 @import './mixins/mixins';
+@import './blocks/burger';
 @import './blocks/container';
 @import './blocks/button';
 @import './blocks/header';

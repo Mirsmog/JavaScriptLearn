@@ -1,7 +1,7 @@
 .error {
   animation: horizontal-shaking 0.35s infinite;
   background-color: rgba(255,0,0, 0.1)!important;
-  outline: 1px solid crimson;
+  outline: 1px solid crimson!important;
 }
 
 @keyframes horizontal-shaking {
