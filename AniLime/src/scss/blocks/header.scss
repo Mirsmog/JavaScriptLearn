@@ -109,8 +109,14 @@
 
   }
 
-  .search-button-wrapper{
+  .search-button-wrapper::after{
     @include breakpoint($xl){
+      display: none;
+    }
+  }
+
+  .search-btn{
+  @include breakpoint($xl){
       display: none;
     }
   }

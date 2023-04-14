@@ -1,5 +1,6 @@
 import { addAnimeToHtml } from "./addCards";
 import { getAnimeList } from "./api/api";
+import { toggleBurgerMenu } from "./burger";
 
 const input = <HTMLInputElement>document.querySelector("#header__input");
 const wrapper = document.querySelector("#inputWrapper");
@@ -13,6 +14,10 @@ export function searchToggle() {
       wrapper?.classList.add("active");
       input.focus();
       input.addEventListener("keypress", isEnter);
+    }
+
+    else if(target?.classList.contains('burger-menu')){
+      toggleBurgerMenu()
     }
 
     if (wrapper?.classList.contains("active")) {

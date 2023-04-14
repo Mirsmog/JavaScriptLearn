@@ -3,9 +3,6 @@ import { addAnimeToHtml } from "./addCards";
 import { searchToggle } from "./search";
 import { addPaginationBtn } from "./addPaginationBtn";
 import { addHeaderActive } from "./scrollHeader";
-import { showBurgerMenu } from "./burger";
-
-showBurgerMenu()
 
 addHeaderActive()
 
