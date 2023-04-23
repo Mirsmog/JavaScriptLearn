@@ -8,7 +8,7 @@ export async function addAnimeToHtml(arr) {
     list.classList.add("anime-card");
     const image =
       validAnime[i].attributes.posterImage.small !== undefined
-        ? validAnime[i].attributes.posterImage.small
+        ? validAnime[i].attributes.posterImage.large
         : "./src/img/404.jpg";
     list.innerHTML = `
             <a href="#" >

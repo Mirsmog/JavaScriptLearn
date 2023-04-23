@@ -1,6 +1,10 @@
 .container{
   width: 100%;
-  max-width: 1320px;
-  padding: 0 15px;
+  max-width: 1330px;
+  padding: 0 20px;
   margin: 0 auto;
+
+  @include breakpoint($md){
+    font-size: 1rem;
+  }
 }

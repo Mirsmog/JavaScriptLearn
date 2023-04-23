@@ -5,5 +5,3 @@ export async function getAnimeList(api) {
     return data.data;
   }
 }
-
-// export const anime = await getAnimeList()

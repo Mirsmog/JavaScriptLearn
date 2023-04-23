@@ -20,6 +20,10 @@ footer{
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.6rem;
+
+  @include breakpoint($xsm){
+    font-size: 1.4rem;
+  }
 }
 
 .footer__logo{

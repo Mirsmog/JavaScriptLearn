@@ -6,34 +6,146 @@
   height: 100vh;
   margin-bottom: 5rem;
 
-  @include breakpoint($xs){
-    background: none;
+  @include breakpoint($lm){
+    height: 70vh;
+  }
+
+  .container{
+    @include breakpoint($lm){
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 .hero__inner {
   padding-top: 28rem;
   display: flex;
   justify-content: space-between;
-  @include breakpoint($xs){
-    background-color: red;
+
+
+  @include breakpoint($lm){
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
   }
 }
 .hero__left {
   width: 100%;
-  max-width: 61rem;
+  max-width: 64rem;
   font-family: "Cabin", sans-serif;
+
+  padding-right: 3rem;
+
+  @include breakpoint($xl){
+    padding-top: 2rem;
+  }
+  @include breakpoint($lg){
+    padding-right: 1rem;
+  }
+
+
+  @include breakpoint($lm){
+    padding: 0;
+  }
 }
 .hero__title {
   font-weight: 700;
   font-size: 6.4rem;
   line-height: 7.6rem;
-  max-width: 50rem;
+  width: 50rem;
   margin-bottom: 3rem;
+
+  @include breakpoint($xl){
+    font-size: 6rem;
+    line-height: 6.6rem;
+    margin-bottom: 2rem;
+  }
+
+  @include breakpoint($lg){
+    font-size: 5rem;
+    line-height: 5.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @include breakpoint($lm){
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  @include breakpoint($md){
+    font-size: 4.7rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  @include breakpoint($xs){
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  @include breakpoint($xsm){
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+
+
 }
 .hero__subtitle {
   font-weight: 400;
   font-size: 2.4rem;
   opacity: .6;
+
+  @include breakpoint($xl){
+    font-size: 2.3rem;
+  }
+
+  @include breakpoint($lg){
+    font-size: 2.2rem;
+  }
+
+  @include breakpoint($lm){
+    font-size: 2.4rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  @include breakpoint($md){
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+
 }
-.hero__right {
+
+
+  @include breakpoint($xs){
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  @include breakpoint($xsm){
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+}
+.hero__right{
+
+
+@include breakpoint($xl){
+  img{
+    width: 50rem;
+  }
+}
+@include breakpoint($lg){
+  img{
+    width: 44rem;
+  }
+}
+
+
+  @include breakpoint($lm){
+    display: none;
+  }
 }

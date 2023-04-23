@@ -32,9 +32,9 @@ export function searchToggle() {
 
 async function isEnter(e) {
   if (e.key === "Enter") {
-    const animeWrapper = document.querySelector("#anime__wrapper")!;
+    const animeWrapper = <HTMLDivElement> document.querySelector("#anime__wrapper");
     const correctValue =
-      input.value != 0 &&
+      input.value != "0" &&
       !/^[а-яА-ЯёЁ\s-]+$/.test(input.value) &&
       /^[a-zA-Z0-9 -]+$/.test(input.value);
     const animeList = await getAnimeList(
@@ -58,6 +58,7 @@ function closeSearch(e) {
   const target = e.target as Element;
   if (
     !target?.classList.contains("header__search-input") &&
+    !target?.classList.contains("header__btn-search") &&
     !target?.classList.contains("search-btn") &&
     !target?.classList.contains("close-button") &&
     wrapper?.classList.contains("active")

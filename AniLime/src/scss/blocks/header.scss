@@ -20,6 +20,7 @@
   &.active .header__inner{
     display: flex;
     justify-content: space-between;
+    height: 6rem;
   }
 
   &.active .nav__list {
@@ -31,11 +32,15 @@
   }
 
   &.active .search-btn {
-    margin-top: .4rem;
+    // margin-top: .4rem;
   }
 
   &.active .header__btn-search{
     margin-top: -2.5rem;
+
+    @include breakpoint($xl){
+      margin-top: 0;
+    }
   }
 
   &.active .search-button-wrapper{
@@ -69,12 +74,19 @@
 
   &__inner-right{
     display: flex;
-    // align-items: center;
     position: relative;
+
+    @include breakpoint($xl){
+      width: 100%;
+    }
   }
 
   .logo {
     width: 166px;
+
+    @include breakpoint($xl){
+      display: none;
+    }
   }
 
   .header__btn-search {
@@ -109,6 +121,17 @@
 
   }
 
+  .search-button-wrapper{
+    @include breakpoint($xl){
+
+    display: flex;
+    position: static;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    }
+  }
+
   .search-button-wrapper::after{
     @include breakpoint($xl){
       display: none;
@@ -117,7 +140,7 @@
 
   .search-btn{
   @include breakpoint($xl){
-      display: none;
+      margin-top: 0;
     }
   }
 

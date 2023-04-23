@@ -5,11 +5,15 @@
 .pagination-num__wrapper{
   display: flex;
   gap: 1.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+
 };
 
 .pagination__wrapper{
   width: 100%;
-  max-width: 70rem;
+  max-width: 60rem;
   margin: 0 auto;
   font-family: "Cabin", sans-serif;
   font-size: 1.8rem;
@@ -23,7 +27,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color-dark);
-    width: 4rem;
+    min-width: 4rem;
     height: 4rem;
     border-radius: 0.8rem;
     opacity: 0.7;

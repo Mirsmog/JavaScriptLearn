@@ -6,7 +6,11 @@
   font-family: "Tajawal", sans-serif;
   font-weight: 400;
   margin-bottom: 8rem;
-  min-height: 65vh;
+
+  @include breakpoint($xl){
+    justify-content: center;
+    padding: 0;
+  }
 }
 .anime-card {
   width: 100%;
@@ -15,6 +19,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &:hover .anime-img{
+    opacity: .5;
+  }
 }
 
 .anime__name {
@@ -73,6 +81,7 @@
 .anime-img{
   max-width: 25rem;
   height: 35rem;
+  transition: .1s opacity ease-in-out;
 }
 .img-star {
   margin-right: 1rem;
